@@ -1,2 +1,2 @@
-# frieghtline
-App used for fright lines.
+# freightline
+App used for Freight Lines.
