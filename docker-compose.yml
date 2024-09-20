@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8001:8000"
+    command: python3 manage.py runserver 0.0.0.0:8000
+  db:
+    image: postgres:16.4-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: freightline
